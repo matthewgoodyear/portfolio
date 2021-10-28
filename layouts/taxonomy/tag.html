@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<div class="wrapper">
+    {{ range .Data.Pages }}
+    <p>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </p>
+    {{ partial "date-tags.html" . }}
+    <br>
+    {{ end }}
+</div>
+
+{{ end }}

@@ -1,0 +1,21 @@
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ $.Site.BaseURL }}css/flexboxgrid.css">
+    <link rel="stylesheet" type="text/css" href="{{ $.Site.BaseURL }}css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="{{ $.Site.BaseURL }}css/main.css">
+    <title>{{ .Title }}</title>
+</head>
+
+<body>
+    {{ partial "header.html" . }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "footer.html" . }}
+</body>

@@ -1,0 +1,16 @@
+<header>
+    <div class="wrapper">
+        <a class="logo-link" href="{{ $.Site.BaseURL }}">
+            <span>{{ .Site.Params.headerTitle | markdownify }}</span>
+        </a>
+
+        <ul class="navigation">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            <li class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}">
+                <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</header>

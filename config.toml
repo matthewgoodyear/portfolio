@@ -1,0 +1,16 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Goodyear Design"
+sectionPagesMenu = "main"
+
+# [permalinks]
+#     work = "/:filename/"
+
+[params]
+    dateFormat = "Jan 2, 2006"
+    headerTitle = "Goodyear Design"
+    homeIntro = "Visual identities with a minimal approach"
+
+[taxonomies]
+    tag = "tags"
+    catergory = "categories"

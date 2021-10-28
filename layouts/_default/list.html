@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="wrapper">
+    {{ range (where .Site.Pages "Section" "work") }}
+       {{ range .Pages.ByPublishDate.Reverse }}
+          <p>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </p>
+          {{ partial "date-tags.html" . }}
+       {{ end }}
+    {{ end }}
+</div>
+
+{{ end }}

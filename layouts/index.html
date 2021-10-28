@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="wrapper">
+    <p>{{ .Site.Params.homeIntro | markdownify }}</p>
+
+    <br>
+
+    {{ range first 2 ( where (where .Site.Pages "Section" "work") ".Params.featured" "=" true )}}
+       <p>
+           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+       </p>
+       {{ partial "date-tags.html" . }}
+    {{ end }}
+</div>
+
+{{ end }}

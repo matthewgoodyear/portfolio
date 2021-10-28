@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Relative Book';
+  src:  url('../fonts/relative/Relative-Book.woff') format('woff'),
+        url('../fonts/relative/Relative-Book.woff2') format('woff2'),
+        url('../fonts/relative/Relative-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Relative Bold';
+  src:  url('../fonts/relative/Relative-Bold.woff') format('woff'),
+        url('../fonts/relative/Relative-Bold.woff2') format('woff2'),
+        url('../fonts/relative/Relative-Bold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
